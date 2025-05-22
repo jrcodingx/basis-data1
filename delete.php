@@ -1,9 +1,9 @@
 <?php 
 // Konfigurasi koneksi database 
-$host = "52.221.234.165"; 
-$user = "root"; 
-$pass = ""; 
-$db   = "db_perpustakaan"; 
+$host = "localhost"; // atau 127.0.0.1
+$user = "perpus";
+$pass = "passwordku123";
+$db   = "db_perpustakaan";
  
 $conn = new mysqli($host, $user, $pass, $db); 
  

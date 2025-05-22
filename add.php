@@ -1,6 +1,6 @@
 <?php 
 // Konfigurasi koneksi database 
-$host = "localhost"; 
+$host = "52.221.234.165"; 
 $user = "root"; 
 $pass = ""; // ganti jika password root Anda berbeda 
 $db   = "db_perpustakaan"; 

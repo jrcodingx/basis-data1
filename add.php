@@ -5,9 +5,9 @@ error_reporting(E_ALL);
 
 // Konfigurasi koneksi database 
 $host = "localhost"; 
-$user = "root"; 
-$pass = ""; // ganti jika password root Anda berbeda 
-$db   = "db_perpustakaan"; 
+$user = "perpus";
+$pass = "passwordku123";
+$db   = "db_perpustakaan";
  
 $conn = new mysqli($host, $user, $pass, $db); 
  

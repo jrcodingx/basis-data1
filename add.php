@@ -4,7 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // Konfigurasi koneksi database 
-$host = "52.221.234.165"; 
+$host = "localhost"; 
 $user = "root"; 
 $pass = ""; // ganti jika password root Anda berbeda 
 $db   = "db_perpustakaan"; 

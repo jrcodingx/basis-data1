@@ -1,16 +1,6 @@
 <?php 
 // Konfigurasi koneksi database 
-$host = "localhost"; // atau 127.0.0.1
-$user = "perpus";
-$pass = "passwordku123";
-$db   = "db_perpustakaan"; 
- 
-$conn = new mysqli($host, $user, $pass, $db); 
- 
-// Cek koneksi 
-if ($conn->connect_error) { 
-    die("Koneksi gagal: " . $conn->connect_error); 
-} 
+include 'config.php';
  
 // Ambil data berdasarkan ID 
 if (isset($_GET['id'])) { 

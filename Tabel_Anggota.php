@@ -64,22 +64,7 @@ onclick=\"return confirm('Yakin ingin menghapus?')\">Hapus</a>
         } 
         ?> 
     </table>
-<br><br>
-    <?php
-    // Tombol kembali ke dashboard
-    echo '<a href="http://52.221.234.165/perpustakaan/">
-            <button style="
-                padding: 10px 20px;
-                background-color: #4CAF50;
-                color: white;
-                border: none;
-                border-radius: 5px;
-                font-size: 16px;
-                cursor: pointer;
-            ">
-                Kembali ke Dashboard
-            </button>
-          </a>';
-    ?> 
+    <a href="http://52.221.234.165/perpustakaan/">+ Kembali</a> 
+    <br><br> 
 </body> 
 </html>

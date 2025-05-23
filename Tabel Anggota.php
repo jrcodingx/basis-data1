@@ -1,22 +1,7 @@
 <?php 
 // Konfigurasi koneksi database 
-$host = "localhost"; // atau 127.0.0.1
-$user = "perpus";
-$pass = "passwordku123";
-$db   = "db_perpustakaan";
- 
-$conn = new mysqli($host, $user, $pass, $db); 
- 
-// Cek koneksi 
-if ($conn->connect_error) { 
-    die("Koneksi gagal: " . $conn->connect_error); 
-} 
- 
-// Ambil data dari tabel 
-$sql = "SELECT * FROM tbl_anggota ORDER BY id_anggota DESC"; 
-$result = $conn->query($sql); 
-?> 
- 
+include 'config.php';
+
 <!DOCTYPE html> 
 <html> 
 <head> 

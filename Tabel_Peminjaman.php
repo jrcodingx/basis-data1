@@ -64,5 +64,6 @@ $result = $conn->query($sql);
         }
         ?>
     </table>
+    <a href="./">Kembali</a>
 </body>
 </html>

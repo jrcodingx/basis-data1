@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($conn->query($update) === TRUE) { 
         echo "<p style='color:green;'>Data berhasil diperbarui!</p>"; 
         // Redirect kembali ke view.php 
-        echo "<meta http-equiv='refresh' content='1;url=view.php'>"; 
+        echo "<meta http-equiv='refresh' content='1;url=Tabel Anggota.php'>"; 
     } else { 
         echo "<p style='color:red;'>Gagal memperbarui data: " . $conn
 >error . "</p>"; 

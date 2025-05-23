@@ -38,6 +38,7 @@ $result = $conn->query($sql);
             <th>ID Anggota</th>
             <th>Nama</th>
             <th>Judul</th>
+            <th>Tanggal Peminjaman</th>
             <th>Status Pengembalian</th>
             <th>Aksi</th>
         </tr>
@@ -52,6 +53,7 @@ $result = $conn->query($sql);
                         <td>".$row['id_anggota']."</td>
                         <td>".$row['nama']."</td>
                         <td>".$row['judul']."</td>
+                        <td>".$row['tgl_peminjaman']."</td>
                         <td>".$row['status']."</td>
                         <td>
                             <a href='editpeminjaman.php?id=".$row['kode_peminjaman']."'>Edit</a> |

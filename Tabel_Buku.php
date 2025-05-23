@@ -27,7 +27,7 @@ $result = $conn->query($sql);
 </head> 
 <body> 
     <h2>Daftar Buku Perpustakaan</h2> 
-    <a href="add.php?tabel=tbl_buku">+ Tambah Buku Baru</a> 
+    <a href="addbuku.php?tabel=tbl_buku">+ Tambah Buku Baru</a> 
     <br><br> 
  
     <table> 

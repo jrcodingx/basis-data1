@@ -1,8 +1,8 @@
 <?php
 // Konfigurasi koneksi database
-$host = "localhost";
-$user = "root";
-$pass = "";
+$host = "localhost"; 
+$user = "perpus";
+$pass = "passwordku123";
 $db   = "db_perpustakaan";
 
 // Membuat koneksi

@@ -28,7 +28,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $tahun_terbit = htmlspecialchars($_POST['tahun_terbit']); 
     $kategori     = htmlspecialchars($_POST['kategori']); 
     $jumlah_buku  = htmlspecialchars($_POST['jumlah_buku']); 
-    $status       = htmlspecialchars($_POST['status']); 
 
     $update = "UPDATE tbl_buku SET 
                 isbn = '$isbn', 
@@ -37,8 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 penerbit = '$penerbit', 
                 tahun_terbit = '$tahun_terbit', 
                 kategori = '$kategori', 
-                jumlah_buku = '$jumlah_buku', 
-                status = '$status' 
+                jumlah_buku = '$jumlah_buku',  
                WHERE id_buku = $id"; 
 
     if ($conn->query($update) === TRUE) { 
@@ -78,12 +76,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <label>Jumlah Buku:</label><br> 
         <input type="number" name="jumlah_buku" value="<?= $data['jumlah_buku'] ?>" required><br><br> 
-
-        <label>Status:</label><br> 
-        <select name="status" required> 
-            <option value="Tersedia" <?= $data['status'] == 'Tersedia' ? 'selected' : '' ?>>Tersedia</option> 
-            <option value="Tidak Tersedia" <?= $data['status'] == 'Tidak Tersedia' ? 'selected' : '' ?>>Tidak Tersedia</option> 
-        </select><br><br> 
 
         <input type="submit" value="Update"> 
         <a href="Tabel_Buku.php">Batal</a> 

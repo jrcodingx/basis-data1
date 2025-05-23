@@ -19,8 +19,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
  
     if ($conn->query($sql) === TRUE) { 
         echo "<p style='color:green;'>Data berhasil disimpan!</p>"; 
-        header("Location: " . $_SERVER['HTTP_REFERER']);
-        exit;
+
+        //kembali ke tabel
+        echo "<meta http-equiv='refresh' content='1;url=Tabel_Anggota.php'>"; 
     } else { 
         echo "<p style='color:red;'>Error: " . $conn->error . "</p>"; 
     } 

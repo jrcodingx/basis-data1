@@ -64,7 +64,7 @@ onclick=\"return confirm('Yakin ingin menghapus?')\">Hapus</a>
         } 
         ?> 
     </table>
-    <a href="./">Kembali ke Dashboard</a>
+    <a href="./">Kembali</a>
     <br><br> 
 </body> 
 </html>

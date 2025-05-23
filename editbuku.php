@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($conn->query($update) === TRUE) { 
         echo "<p style='color:green;'>Data berhasil diperbarui!</p>"; 
-        echo "<meta http-equiv='refresh' content='1;url=Tabel_Buku.php'>"; 
+        echo "<meta http-equiv='refresh' content='1;url=Tabel_Anggota.php'>"; 
     } else { 
         echo "<p style='color:red;'>Gagal memperbarui data: " . $conn->error . "</p>"; 
     } 

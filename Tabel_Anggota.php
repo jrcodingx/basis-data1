@@ -64,7 +64,7 @@ onclick=\"return confirm('Yakin ingin menghapus?')\">Hapus</a>
         } 
         ?> 
     </table>
-    <a href="http://52.221.234.165/perpustakaan/">+ Kembali</a> 
+    <a href="http://52.221.234.165/perpustakaan/">Kembali</a> 
     <br><br> 
 </body> 
 </html>

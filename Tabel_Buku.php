@@ -55,7 +55,7 @@ $result = $conn->query($sql);
                         <td>".$row['tahun_terbit']."</td> 
                         <td>".$row['kategori']."</td> 
                         <td>".$row['jumlah_buku']."</td> 
-                        <td> <a href='editbuku.php?id=".$row['id_buku']."'>Edit</a> |  <a href='delete.php?id=".$row['id_buku']."' onclick=\"return confirm('Yakin ingin menghapus?')\">Hapus</a> </td> 
+                        <td> <a href='editbuku.php?id=".$row['id_buku']."'>Edit</a> |  <a href='deletebuku.php?id=".$row['id_buku']."' onclick=\"return confirm('Yakin ingin menghapus?')\">Hapus</a> </td> 
                       </tr>"; 
             } 
         } else { 

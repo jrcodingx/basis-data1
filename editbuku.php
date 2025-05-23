@@ -20,6 +20,28 @@ if (isset($_GET['id'])) {
 } 
 
 // Proses saat form disubmit 
+<?php 
+// Konfigurasi koneksi database 
+include 'config.php';
+
+// Ambil data berdasarkan ID 
+if (isset($_GET['id'])) { 
+    $id = intval($_GET['id']); 
+    $query = "SELECT * FROM tbl_buku WHERE id_buku = $id"; 
+    $result = $conn->query($query); 
+
+    if ($result->num_rows === 1) { 
+        $data = $result->fetch_assoc(); 
+    } else { 
+        echo "Data tidak ditemukan."; 
+        exit; 
+    } 
+} else { 
+    echo "ID tidak diberikan."; 
+    exit; 
+} 
+
+// Proses saat form disubmit 
 if ($_SERVER["REQUEST_METHOD"] == "POST") { 
     $isbn         = htmlspecialchars($_POST['isbn']); 
     $judul        = htmlspecialchars($_POST['judul']); 
@@ -36,17 +58,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 penerbit = '$penerbit', 
                 tahun_terbit = '$tahun_terbit', 
                 kategori = '$kategori', 
-                jumlah_buku = '$jumlah_buku',  
+                jumlah_buku = '$jumlah_buku' 
                WHERE id_buku = $id"; 
 
     if ($conn->query($update) === TRUE) { 
         echo "<p style='color:green;'>Data berhasil diperbarui!</p>"; 
-        echo "<meta http-equiv='refresh' content='1;url=Tabel_Anggota.php'>"; 
+        echo "<meta http-equiv='refresh' content='1;url=Tabel_Buku.php'>"; 
     } else { 
         echo "<p style='color:red;'>Gagal memperbarui data: " . $conn->error . "</p>"; 
     } 
 } 
-?> 
+?>
 
 <!DOCTYPE html> 
 <html> 

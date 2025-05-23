@@ -58,7 +58,7 @@ $result = $conn->query($sql);
             while($row = $result->fetch_assoc()) {
                 echo "<tr>
                         <td>".$no++."</td>
-                        <td>".$row['Kode_peminjaman']."</td>
+                        <td>".$row['kode_peminjaman']."</td>
                         <td>".$row['id_buku']."</td>
                         <td>".$row['id_anggota']."</td>
                         <td>".$row['nama']."</td>

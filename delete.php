@@ -10,7 +10,7 @@ if (isset($_GET['id'])) {
  
     if ($conn->query($sql) === TRUE) { 
         // Redirect kembali ke view.php setelah berhasil hapus 
-        header("Location: view.php"); 
+        header("Location: Tabel Anggota.php"); 
         exit; 
     } else { 
         echo "Gagal menghapus data: " . $conn->error; 

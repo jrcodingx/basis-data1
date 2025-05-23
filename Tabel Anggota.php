@@ -3,7 +3,7 @@
 include 'config.php';
 
 // Ambil data dari tabel 
-$sql = "SELECT * FROM tbl_buku ORDER BY id_buku DESC"; 
+$sql = "SELECT * FROM tbl_anggota ORDER BY id_anggota DESC"; 
 $result = $conn->query($sql); 
 ?> 
 

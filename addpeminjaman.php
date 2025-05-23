@@ -48,9 +48,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="text" name="judul" required><br><br> 
  
         <label>Tanggal Peminjaman:</label><br> 
-        <input type="datetime-local" name="tgl_peminjaman" required><br><br> 
+        <input type="date" name="tgl_peminjaman" required><br><br> 
  
-        <label>Status:</label><br> 
+        <label>Status Pengembalian:</label><br> 
         <select name="status" required> 
             <option value="BELUM">BELUM</option> 
             <option value="SUDAH">SUDAH</option> 

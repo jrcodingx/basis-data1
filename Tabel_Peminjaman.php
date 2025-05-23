@@ -38,7 +38,7 @@ $result = $conn->query($sql);
             <th>ID Anggota</th>
             <th>Nama</th>
             <th>Judul</th>
-            <th>Status</th>
+            <th>Status Pengembalian</th>
             <th>Aksi</th>
         </tr>
         <?php

@@ -63,6 +63,23 @@ onclick=\"return confirm('Yakin ingin menghapus?')\">Hapus</a>
             echo "<tr><td colspan='7'>Belum ada data anggota.</td></tr>"; 
         } 
         ?> 
-    </table> 
+    </table>
+<br><br>
+    <?php
+    // Tombol kembali ke dashboard
+    echo '<a href="http://52.221.234.165/perpustakaan/">
+            <button style="
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+            ">
+                Kembali ke Dashboard
+            </button>
+          </a>';
+    ?> 
 </body> 
 </html>

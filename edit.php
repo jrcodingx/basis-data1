@@ -79,7 +79,7 @@ required><br><br>
         </select><br><br> 
  
         <input type="submit" value="Update"> 
-        <a href="view.php">Batal</a> 
+        <a href="Tabel_Anggota.php">Batal</a> 
     </form> 
 </body> 
 </html> 

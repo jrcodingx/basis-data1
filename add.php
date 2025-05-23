@@ -19,6 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
  
     if ($conn->query($sql) === TRUE) { 
         echo "<p style='color:green;'>Data berhasil disimpan!</p>"; 
+        header("Location: " . $_SERVER['HTTP_REFERER']);
+        exit;
     } else { 
         echo "<p style='color:red;'>Error: " . $conn->error . "</p>"; 
     } 

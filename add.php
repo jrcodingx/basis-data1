@@ -4,17 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // Konfigurasi koneksi database 
-$host = "localhost"; 
-$user = "perpus";
-$pass = "passwordku123";
-$db   = "db_perpustakaan";
- 
-$conn = new mysqli($host, $user, $pass, $db); 
- 
-// Cek koneksi 
-if ($conn->connect_error) { 
-    die("Koneksi gagal: " . $conn->connect_error); 
-} 
+include 'config.php'; 
  
 // Proses form saat disubmit 
 if ($_SERVER["REQUEST_METHOD"] == "POST") { 

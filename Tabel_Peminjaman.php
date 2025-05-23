@@ -54,8 +54,8 @@ $result = $conn->query($sql);
                         <td>".$row['judul']."</td>
                         <td>".$row['status']."</td>
                         <td>
-                            <a href='edit.php?id=".$row['Kode_Peminjaman']."'>Edit</a> |
-                            <a href='deletepeminjaman.php?id=".$row['Kode_Peminjaman']."' onclick=\"return confirm('Yakin ingin menghapus?')\">Hapus</a>
+                            <a href='edit.php?id=".$row['kode_peminjaman']."'>Edit</a> |
+                            <a href='deletepeminjaman.php?id=".$row['kode_peminjaman']."' onclick=\"return confirm('Yakin ingin menghapus?')\">Hapus</a>
                         </td>
                       </tr>";
             }

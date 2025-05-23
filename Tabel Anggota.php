@@ -2,6 +2,11 @@
 // Konfigurasi koneksi database 
 include 'config.php';
 
+// Ambil data dari tabel 
+$sql = "SELECT * FROM tbl_buku ORDER BY id_buku DESC"; 
+$result = $conn->query($sql); 
+?> 
+
 <!DOCTYPE html> 
 <html> 
 <head> 

@@ -27,7 +27,7 @@ $result = $conn->query($sql);
 </head>
 <body>
     <h2>Daftar Peminjaman</h2>
-    <a href="add.php?tabel=tbl_peminjaman">+ Tambah Peminjaman Baru</a>
+    <a href="addpeminjaman.php?tabel=tbl_peminjaman">+ Tambah Peminjaman Baru</a>
     <br><br>
 
     <table>

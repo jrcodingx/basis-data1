@@ -62,7 +62,7 @@ $result = $conn->query($sql);
                       </tr>";
             }
         } else {
-            echo "<tr><td colspan='8'>Belum ada peminjaman.</td></tr>";
+            echo "<tr><td colspan='9'>Belum ada peminjaman.</td></tr>";
         }
         ?>
     </table>

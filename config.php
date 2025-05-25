@@ -1,15 +1,19 @@
+
 <?php
-// Konfigurasi koneksi database
-$host = "localhost"; 
+// Konfigurasi koneksi PostgreSQL
+$host = "localhost";
+$port = "5432";  // default port PostgreSQL
+$dbname = "db_perpustakaan";
 $user = "perpus";
 $pass = "passwordku123";
-$db   = "db_perpustakaan";
 
 // Membuat koneksi
-$conn = new mysqli($host, $user, $pass, $db);
+$conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$pass");
 
 // Cek koneksi
-if ($conn->connect_error) {
-    die("Koneksi gagal: " . $conn->connect_error);
+if (!$conn) {
+    die("Koneksi gagal: " . pg_last_error());
+} else {
+    echo "Koneksi berhasil!";
 }
 ?>

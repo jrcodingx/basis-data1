@@ -59,7 +59,7 @@ $result = $conn->query($sql);
                       </tr>"; 
             } 
         } else { 
-            echo "<tr><td colspan='7'>Belum ada data buku.</td></tr>"; 
+            echo "<tr><td colspan='9'>Belum ada data buku.</td></tr>"; 
         } 
         ?> 
     </table> 

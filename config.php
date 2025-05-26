@@ -1,18 +1,15 @@
 <?php
-// Konfigurasi koneksi database PostgreSQL
-$host = "localhost";
-$port = "5432";
-$dbname = "db_perpustakaan_pg";
-$user = "perpus_pg";
-$password = "passwordku123";
+// Konfigurasi koneksi database
+$host = "localhost"; 
+$user = "perpus";
+$pass = "passwordku123";
+$db   = "db_perpustakaan";
 
 // Membuat koneksi
-$conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
+$conn = new mysqli($host, $user, $pass, $db);
 
 // Cek koneksi
-if (!$conn) {
-    die("Koneksi ke PostgreSQL gagal: " . pg_last_error());
-} else {
-    echo "Koneksi berhasil!";
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
 }
 ?>

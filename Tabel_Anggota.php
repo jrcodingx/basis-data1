@@ -3,8 +3,8 @@
 include 'config.php';
 
 // Ambil data dari tabel 
-$sql = "SELECT * FROM tbl_anggota ORDER BY id_anggota DESC"; 
-$result = pg_query($conn, $sql);
+$sql = "SELECT * FROM tbl_buku ORDER BY id_buku DESC"; 
+$result = $conn->query($sql); 
 ?> 
 
 <!DOCTYPE html> 
@@ -41,9 +41,9 @@ $result = pg_query($conn, $sql);
             <th>Aksi</th> 
         </tr> 
         <?php 
-        if ($pg_num_rows->num_rows > 0) { 
+        if ($result->num_rows > 0) { 
             $no = 1; 
-            while($row = $pg_fetch_assoc->fetch_assoc()) { 
+            while($row = $result->fetch_assoc()) { 
                 echo "<tr> 
                         <td>".$no++."</td> 
                         <td>".$row['nim']."</td> 

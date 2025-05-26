@@ -2,8 +2,8 @@
 // Konfigurasi koneksi database
 $host = "localhost";
 $port = "5432"; // Port default PostgreSQL
-$dbname = "db_perpustakaan";
-$user = "perpus";
+$dbname = "db_perpustakaan_pg";
+$user = "perpus_pg";
 $password = "passwordku123";
 
 // Membuat string koneksi
